@@ -7,13 +7,13 @@ const FirstPost = () => {
         <div className={styles.container}>
             <Head>
                 <title>First Post</title>
-				<link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/favicon.ico" />
             </Head>
 
             <main>
                 <h1 className={styles.title}>First Post</h1>
                 <h6 className={styles.title}>
-                    <Link href="/">Back to home</Link>
+                    Back to <Link href="/">Home.</Link>
                 </h6>
             </main>
         </div>
