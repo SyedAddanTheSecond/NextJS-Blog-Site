@@ -1,13 +1,13 @@
 import Head from "next/head"
 import Link from "next/link"
+import Layout from "../../components/layout"
 import styles from '../../styles/Home.module.css'
 
 const FirstPost = () => {
     return (
-        <div className={styles.container}>
+        <Layout>
             <Head>
                 <title>First Post</title>
-                <link rel="icon" href="/favicon.ico" />
             </Head>
 
             <main>
@@ -16,7 +16,7 @@ const FirstPost = () => {
                     Back to <Link href="/">Home.</Link>
                 </h6>
             </main>
-        </div>
+        </Layout>
     )
 }
 

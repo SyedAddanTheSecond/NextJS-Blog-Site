@@ -1,22 +1,22 @@
 import Head from 'next/head'
+import Layout, { siteTitle } from '../components/layout'
+import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
-import styles from '../styles/Home.module.css'
 
 const Home = () => {
-	return (
-		<div className={styles.container}>
-			<Head>
-				<title>Create Next App</title>
-				<link rel="icon" href="/favicon.ico" />
-			</Head>
-
-			<main>
-				<h1 className={styles.title}>
-					Read <Link href="./posts/first-post">Blog.</Link>
-				</h1>
-			</main>
-		</div>
-	)
+  return (
+    <Layout home>
+      <Head>
+        <title>{siteTitle}</title>
+      </Head>
+      <section className={utilStyles.headingMd}>
+        <p>Bruh JoJo Is Fire!</p>
+		<p>
+			First <Link href="/posts/first-post">Blog.</Link>
+		</p>
+      </section>
+    </Layout>
+  )
 }
 
 export default Home
